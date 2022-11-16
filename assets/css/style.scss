@@ -1,0 +1,49 @@
+// Variables //
+$background: #333333;
+$swatch_1: #231454;
+$swatch_2: #520f5b;
+$swatch_3: #271e9a;
+$swatch_4: #4e3eb6;
+$swatch_5: #8a6c9c;
+$golden-gradient: linear-gradient(#805E19, #D09F41, #FDDF9B);
+$main-font: 'Plus Jakarta Sans', sans-serif;
+
+
+// General //
+body {
+    margin: 0;
+    font-family: $main-font;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: $background;
+}
+
+// Header //
+header {
+    
+    .container {
+
+        .logo {
+
+            img {
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+// Footer //
+
+
+
+// Landing Page //
+
+/* First-Section */
+.first-section {
+
+
+    .container {
+        height: 630px;
+    }
+}
