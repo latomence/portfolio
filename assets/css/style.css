@@ -4,13 +4,119 @@ body {
   font-size: 13px;
   font-weight: 400;
   background-color: #333333;
+  color: white;
 }
 
+header {
+  z-index: 9999999;
+  position: fixed;
+  width: -webkit-fill-available;
+}
+header .container {
+  display: flex;
+  padding: 10px;
+  place-content: center;
+}
 header .container .logo img {
   height: 40px;
 }
+header .container .menu ul {
+  display: flex;
+}
+header .container .menu ul li {
+  list-style-type: none;
+  margin-right: 37px;
+}
+header .container .menu ul li a {
+  text-decoration: none;
+  color: white;
+}
 
 /* First-Section */
-.first-section .container {
+.first-section {
+  border-radius: 0 0 35px 35px;
   height: 630px;
+}
+.first-section .container {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 153px;
+}
+.first-section .container video {
+  width: -webkit-fill-available;
+  -o-object-fit: none;
+     object-fit: none;
+  height: 630px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+  border-radius: 0 0 35px 35px;
+  opacity: 1;
+  z-index: -1;
+}
+.first-section .container .title {
+  margin-bottom: 35px;
+}
+.first-section .container .title h1 {
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.first-section .container .bio {
+  margin: 0 12px;
+}
+
+/* Infos Section */
+.infos {
+  padding-top: 88px;
+  overflow: hidden;
+}
+.infos .container {
+  position: relative;
+}
+.infos .container .background_title {
+  position: absolute;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 145px;
+  color: #333333;
+  opacity: 20%;
+  z-index: -1;
+  top: -90px;
+  right: -30px;
+  text-transform: uppercase;
+  text-shadow: -1px -1px #fff, 1px 1px #fff, 1px -1px #fff, -1px 2px #fff, 1px 2px #fff;
+}
+.infos .container .stats div {
+  margin: 0 auto 30px;
+  background-color: #8a6c9c;
+  width: 90%;
+  border-radius: 35px;
+  background: rgba(138, 108, 156, 0.7);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.infos .container .stats div:nth-child(1) {
+  height: 425px;
+  margin-bottom: 30px;
+}
+.infos .container .stats div:nth-child(2) {
+  height: 235px;
+  margin-bottom: 30px;
+}
+.infos .container .stats div:nth-child(3) {
+  height: 235px;
+  margin-bottom: 30px;
+}
+.infos .container .stats div:nth-child(4) {
+  height: 175px;
+}
+.infos .container .stats .radar_chart {
+  background: rgba(138, 108, 156, 0.7);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }/*# sourceMappingURL=style.css.map */
