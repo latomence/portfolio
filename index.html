@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Portolio</title>
+    <title>PERRET Tom - Portfolio | Web Developper</title>
 </head>
 <body>
+    <div id="top"></div>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="./assets/img/logo.svg" alt="Logo">
+                <a href="#top"><img src="./assets/img/logo.svg" alt="Logo"></a>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">LINK</a></li>
-                    <li><a href="#">LINK</a></li>
-                    <li><a href="#">LINK</a></li>
-                    <li><a href="#">LINK</a></li>
+                    <li><a href="#infos">INFOS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +31,7 @@
         <section class="first-section">
             <div class="container">
                 <video autoplay muted loop id="myVideo">
-                    <source src="./assets/video/yoru_animated.mp4" type="video/mp4">
+                    <source src="./assets/video/background.mov" type="video/mp4">
                   </video>
                 <div class="title">
                     <h1>PERRET Tom <br>
@@ -39,31 +40,87 @@
                 </div>
                 <div class="bio">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit. Nulla non nisi at enim congue <br>
-                        cursus. Suspendisse a mattis mi.
+                        Bonjour, je m'appele Tom et je suis
+                        web developpeur. Je vous souhaite la bienvenue
+                        sur mon site portfolio ! Pour toutes infos
+                        n'hésitez pas à me contacter.
                     </p>
                 </div>
             </div>
         </section>
+        <div id="infos"></div>
         <section class="infos">
             <div class="container">
                 <div class="background_title">Infos</div>
                 <div class="stats">
                     <div class="radar_chart"></div>
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
+                    <div class="profile"></div>
+                    <div class="most_used"></div>
+                    <div class="more_infos"></div>
                 </div>
             </div>
         </section>
-        <section class="separator"></section>
-        <section class="projects"></section>
-        <section class="paralax"></section>
-        <section class="contact"></section>
+        <section class="separator">
+            <div class="container">
+                <div class="content">
+                    <div class="title">
+                        <h3>Une Question ?</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Si vous avez une question ou besoin de quelque chose comme un site internet ou n'importe-quoi
+                            d'autres. Cliquez sur le bouton ci-dessous pour avoir accès au formulaire et faite bien attention
+                            à bien le remplir.
+                        </p>
+                    </div>
+                    <div class="button">
+                        <a href="#contact" class="">contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="projects"></div>
+        <section class="projects">
+            <div class="container">
+                <div class="background_title">PROJETS</div>
+                <div class="content">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+            </div>
+        </section>
+        <section class="paralax">
+            <div class="container">
+            </div>
+        </section>
+        <div id="contact"></div>
+        <section class="contact">
+            <div class="container">
+                <div class="cadre"></div>
+                <div class="formulaire">
+                    <form action="" method="get" class="form">
+                        <div class="form">
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form">
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="container"></div>
+        <div class="container">
+            <div class="top"></div>
+            <div class="credit">
+                <p>portfolio made by latomence</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
