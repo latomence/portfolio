@@ -359,12 +359,32 @@ footer {
         .content {
             display: inline-flex;
             gap: 20px;
+            margin: 0 20px;
 
             .card {
                 background-color: $swatch_5;
                 border-radius: 35px;
                 width: 220px;
                 height: 430px;
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+
+                h4 {
+                    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.301);
+                }
+            }
+
+            .card:nth-child(1) {
+                background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            }
+
+            .card:nth-child(2) {
+                background-image: url('https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+            }
+
+            .card:nth-child(3) {
+                background-image: url('https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
             }
         }
     }
@@ -470,6 +490,35 @@ footer {
 
         @media screen and (max-width:991px) {
             height: 350px;
+        }
+    }
+}
+
+/* Contact */
+.contact {
+    margin: 70px 20px;
+
+    .container {
+        text-align: center;
+    }
+
+    .formulaire {
+        border-radius: 20px;
+        background-color: $swatch_2;
+        padding: 20px 0;
+
+        input,
+        textarea {
+            background: transparent;
+            border: none;
+            border-bottom: solid 1px white !important;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: white;
         }
     }
 }
